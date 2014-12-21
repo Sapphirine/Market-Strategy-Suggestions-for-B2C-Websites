@@ -2,7 +2,7 @@ Market-strategy-suggestions-for-B2C-websites
 
 Overview
 
-We used 2 methods to analyze the dataset, so there are 2 folders, each is a java maven project. You could go to http://secret-beyond-5169.herokuapp.com to see the outcome of our analysis.
+There are 3 folders, 2 of them are java maven projects, since we used 2 methods to analyze the dataset. The other folder 'bigdata' contains the Ruby on Rails project for the website. You could go to http://secret-beyond-5169.herokuapp.com to see the outcome of our analysis.
 
 Usage
 
