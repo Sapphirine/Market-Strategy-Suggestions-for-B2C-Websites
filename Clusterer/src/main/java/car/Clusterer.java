@@ -192,9 +192,7 @@ public class Clusterer {
 
 
 	private int find_col_by_code(HashMap<Long, String> map, Long code) {
-		dbg("code=" + code);
 		String descr = map.get(code);
-		dbg("descr=" + descr);
 		return descr2idx.get(descr);
 	}
 
