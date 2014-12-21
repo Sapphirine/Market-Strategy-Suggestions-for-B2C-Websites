@@ -1,0 +1,29 @@
+<div class="inner-wrapper">
+	<%= link_to '<< Back', root_path %>
+
+	<h1>About Our Project</h1>
+	<h2>Overview</h2>
+	<p>Our project is to give market strategy suggestions for B2C websites. Nowadays, the market strategy suggestions are based on observation, street investigation and ranking by excel and so on. However these traditional ways are time consuming and labor consuming.</p>
+
+	<p>Thus in new big data era, we try new ways to process the large scale of data and take advantage of the tremendous computing ability of our computers. We set up a more convincing and concrete tool that is also user-customized. Which means user can choose the certain fields they want and get the market strategy.</p>
+	<br>
+
+	<h2>Dataset</h2>
+	<p>The dataset we used is Consumer Expenditure Survey on ICPSR website which is from the Institute of Social Science in the University of Michigan. The raw datasets contains each interviewee’s personal information and the consuming records. </p>
+	<p>URL:https://www.icpsr.umich.edu/icpsrweb/ICPSR/studies/34441?sortBy=&amp;q=consumer+expenditures+34441&amp;searchSource=revise</p>
+	<br>
+
+	<h2>Algorithm</h2>
+	<p>The core algorithm is k-means clustering. We use mahout to implement our algorithm. We take different dimensions of data to do the clustering. We come up with the tag based clustering, customer based clustering and optimized customer based clustering. The clustering result reflects the different consuming behaviors that let us to give the market strategy suggestion.</p>
+	<p><strong>Tag based clustering:</strong> we take all the brands and customers’ age educations level and income as tags to create vectors. Then the dimensions are the customer ID. This method may cause some unexpected result.</p>
+
+	<p><strong>Customer based clustering:</strong> We take rescaled income, age, and education level as 3 dimensions and create the vectors of all the customers. Then we cluster all the customers according to these three dimensions. With the result we can divide all the people into different type. Then in each cluster we can count top 3 vehicle brands they most prefer according to their consuming record. </p>
+	
+	<p><strong>Optimized customer based clustering:</strong> In this clustering method we not only take income, age and education level as dimensions but also the vehicle information as vector dimension. In this method every car brand with different size is viewed as a dimension. For each customer vector, we mark 1 in the particular dimension that represents the vehicle he owned.</p>
+	
+	<p><strong>Customer based clustering for certain brand:</strong>We do not take all the data, but extracted data of certain brand. Here we choose brand ford as an example. We just pick up the customers who buy ford and then we do the clustering according to their age, education level and income.</p>
+ 
+ 	<br>
+ 	<p>We try different cluster algorithms for different applications. Customer based clustering and customer based clustering for certain brand will let us give the market strategy for certain brand while optimized customer based clustering allowed us to give consuming strategy for a certain customer.</p>
+
+</div>

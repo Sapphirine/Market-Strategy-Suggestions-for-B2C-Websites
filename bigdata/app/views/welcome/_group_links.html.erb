@@ -1,0 +1,17 @@
+<div id="my_sidebar" class="col-sm-3 well">
+	<div class="sidebar">
+		<ul class="nav nav-pills nav-stacked">
+			<li><b>BRAND</b></li>
+			<br>
+			<li class=<%= 'active' if params[:action] == 'by_car'%>><%= link_to "All Cars", by_car_path%></li>
+			<li class=<%= 'active' if params[:action] == 'ford'%>><%= link_to "Ford", ford_path%></li>
+			<li class=<%= 'active' if params[:action] == 'bmw'%>><%= link_to "BMW", bmw_path%></li>
+			<li class=<%= 'active' if params[:action] == 'chevrolet'%>><%= link_to "Chevrolet", chevrolet_path%></li>
+			<li class=<%= 'active' if params[:action] == 'honda'%>><%= link_to "Honda", honda_path%></li>
+			<li class=<%= 'active' if params[:action] == 'gmc'%>><%= link_to "GMC", gmc_path%></li>
+			<li class=<%= 'active' if params[:action] == 'nissan'%>><%= link_to "Nissan", nissan_path%></li>
+			<li class=<%= 'active' if params[:action] == 'dodge'%>><%= link_to "Dodge", dodge_path%></li>
+			<li class=<%= 'active' if params[:action] == 'toyota'%>><%= link_to "Toyota", toyota_path%></li>
+		</ul>
+	</div>
+</div>

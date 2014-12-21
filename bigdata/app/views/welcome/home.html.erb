@@ -1,0 +1,63 @@
+<div class="span10 offset1">
+	<div id="my-carousel" class="carousel slide" data-ride="carousel">
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+		<li data-target="#my-carousel" data-slide-to="0" class="active"></li>
+		<li data-target="#my-carousel" data-slide-to="1"></li>
+		<li data-target="#my-carousel" data-slide-to="2"></li>
+		</ol>
+
+		<!-- Wrapper for slides -->
+		<div class="carousel-inner" role="listbox">
+			<div class="item active">
+				<%= image_tag("bigdata.png", :alt => "bigdata") %>
+			</div>
+			<div class="item">
+				<%= image_tag("people.jpg", :alt => "people") %>
+			</div>
+			<div class="item">
+				<%= image_tag("cars.png", :alt => "cars") %>
+			</div>
+		</div>
+	</div>
+	<div style="margin-left:27px">
+		<h2>Market Strategy Suggestions for B2C Websites</h2>
+		<p>-- Siyuan Zhang, Wenxin Wang, Xuebo Wang, Zixuan Gong</p>
+	</div>
+	<div class="row-fluid need-padding">
+		<div class="col-md-4">
+			<h3>Our Project</h3>
+			<p>Our project is about Market Strategy Suggestions for B2C Websites. Here we introduce the project, the dataset, and the algorithms we use</p>
+			<p>
+				<a class="btn btn-default" href=<%= introduction_path %> role="button">View details</a>
+			</p>
+		</div>
+		<div class="col-md-4">
+			<h3>Inspect Clusters</h3>
+			<p>In our java program, we do clustering with all the dimensions we are interested in. Here is some pre-processed data as an example</p>
+			<p>
+				<a class="btn btn-default" href=<%= combinations_path %> role="button">View details</a>
+			</p>
+		</div>
+		<div class="col-md-4">
+			<h3>Cluster By Car</h3>
+			<p>We also did clustering on the people that have a specific car, using their age, education level, and income as dimensions</p>
+
+			<p>
+				<a class="btn btn-default" href=<%= by_car_path %> role="button">View details</a>
+			</p>
+		</div>
+	</div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+		    $('.carousel').carousel({
+				interval: 3000
+			});
+		});
+	</script>
+
+</div>
